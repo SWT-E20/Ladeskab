@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\mvraa\\Documents\\GitHub\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\mvraa\\Documents\\GitHub\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mvraa\\Documents\\GitHub\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
+        "projectName": "Ladeskab.Test.Unit",
+        "projectPath": "C:\\Users\\mvraa\\Documents\\GitHub\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
+        "packagesPath": "C:\\Users\\mvraa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mvraa\\Documents\\GitHub\\Ladeskab\\Ladeskab.Test.Unit\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mvraa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\mvraa\\Documents\\GitHub\\Ladeskab\\Calculator\\Calculator.csproj": {
+                "projectPath": "C:\\Users\\mvraa\\Documents\\GitHub\\Ladeskab\\Calculator\\Calculator.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.7.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "NunitXml.TestLogger": {
+              "target": "Package",
+              "version": "[2.1.62, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
