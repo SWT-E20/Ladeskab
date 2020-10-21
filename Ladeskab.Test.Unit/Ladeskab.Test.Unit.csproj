@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Calculator\Calculator.csproj" />
+    <ProjectReference Include="..\Ladeskab\Ladeskab.csproj" />
   </ItemGroup>
 
 </Project>
