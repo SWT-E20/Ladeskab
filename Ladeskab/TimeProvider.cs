@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Ladeskab.Interfaces;
 
 namespace Ladeskab
 {
-    class TimeProvider
+    public class TimeProvider : ITimeProvider
     {
     }
 }
