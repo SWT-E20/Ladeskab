@@ -4655,7 +4655,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "C:\\Users\\user\\Source\\Repos\\SWT-E20\\Ladeskab\\Calculator\\Calculator.csproj",
+      "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Calculator\\Calculator.csproj",
       "Ladeskab >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "NUnit >= 3.12.0",
@@ -4664,19 +4664,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\mvraa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\SWT-E20\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
+      "projectUniqueName": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
       "projectName": "Ladeskab.Test.Unit",
-      "projectPath": "C:\\Users\\user\\Source\\Repos\\SWT-E20\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Source\\Repos\\SWT-E20\\Ladeskab\\Ladeskab.Test.Unit\\obj\\",
+      "projectPath": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
+      "packagesPath": "C:\\Users\\mvraa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab.Test.Unit\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mvraa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4689,11 +4689,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\user\\Source\\Repos\\SWT-E20\\Ladeskab\\Calculator\\Calculator.csproj": {
-              "projectPath": "C:\\Users\\user\\Source\\Repos\\SWT-E20\\Ladeskab\\Calculator\\Calculator.csproj"
+            "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Calculator\\Calculator.csproj": {
+              "projectPath": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Calculator\\Calculator.csproj"
             },
-            "C:\\Users\\user\\Source\\Repos\\SWT-E20\\Ladeskab\\Ladeskab\\Ladeskab.csproj": {
-              "projectPath": "C:\\Users\\user\\Source\\Repos\\SWT-E20\\Ladeskab\\Ladeskab\\Ladeskab.csproj"
+            "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab\\Ladeskab.csproj": {
+              "projectPath": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab\\Ladeskab.csproj"
             }
           }
         }
@@ -4739,7 +4739,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -4747,8 +4747,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\user\\Source\\Repos\\SWT-E20\\Ladeskab\\Calculator\\Calculator.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\user\\Source\\Repos\\SWT-E20\\Ladeskab\\Calculator\\Calculator.csproj",
+      "message": "Unable to find project 'C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Calculator\\Calculator.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Calculator\\Calculator.csproj",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]

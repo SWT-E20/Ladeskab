@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Ladeskab.Interfaces
 {
-    interface IDoor
+    public interface IDoor
     {
+        bool IsLocked { get; set; }
+
+        void LockDoor();
+        void UnlockDoor();
     }
 }
