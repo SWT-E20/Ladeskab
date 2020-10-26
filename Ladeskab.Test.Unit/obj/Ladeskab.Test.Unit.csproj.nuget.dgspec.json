@@ -27,9 +27,6 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Calculator\\Calculator.csproj": {
-                "projectPath": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Calculator\\Calculator.csproj"
-              },
               "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab\\Ladeskab.csproj": {
                 "projectPath": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab\\Ladeskab.csproj"
               }

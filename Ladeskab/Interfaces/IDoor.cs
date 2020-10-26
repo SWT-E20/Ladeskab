@@ -6,9 +6,8 @@ namespace Ladeskab.Interfaces
 {
     public interface IDoor
     {
-        bool IsLocked { get; set; }
-
-        void LockDoor();
-        void UnlockDoor();
+        bool LockDoor();
+        bool UnlockDoor();
+        bool OnToggleDoor();
     }
 }
