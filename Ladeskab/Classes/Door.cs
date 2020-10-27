@@ -41,15 +41,16 @@ namespace Ladeskab
             if (IsOpen)
             {
                 IsOpen = false;
-                Console.WriteLine("Door Closed.");
+                Console.WriteLine("Door closed.");
                 return true;
             }
-            else if(!IsOpen && !IsLocked)
+            else if(!IsLocked)
             {
                 IsOpen = true;
                 Console.WriteLine("Door opened.");
                 return true;
             }
+            Console.WriteLine("Can't open - door is locked!");
             return false;
         }
     }
