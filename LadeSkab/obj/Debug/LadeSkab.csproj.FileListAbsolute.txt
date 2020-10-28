@@ -22,3 +22,9 @@ C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csprojA
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csproj.CoreCompileInputs.cache
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\LadeSkab\obj\Debug\LadeSkab.dll
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\LadeSkab\obj\Debug\LadeSkab.pdb
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\LadeSkab\bin\Debug\LadeSkab.dll
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\LadeSkab\bin\Debug\LadeSkab.pdb
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csprojAssemblyReference.cache
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csproj.CoreCompileInputs.cache
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\LadeSkab\obj\Debug\LadeSkab.dll
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\LadeSkab\obj\Debug\LadeSkab.pdb
