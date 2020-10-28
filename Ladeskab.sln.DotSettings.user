@@ -3,5 +3,6 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::3B0E6BB0-9E68-4A75-9FCE-15413232F3B0::.NETCoreApp,Version=v3.1::Ladeskab.Test.Unit.TestUsbCharger&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::3B0E6BB0-9E68-4A75-9FCE-15413232F3B0::.NETCoreApp,Version=v3.1::Ladeskab.Test.Unit.TestDisplay.Print_TestInputValid&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::3B0E6BB0-9E68-4A75-9FCE-15413232F3B0::.NETCoreApp,Version=v3.1::Ladeskab.Test.Unit.TestRfidReader&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
