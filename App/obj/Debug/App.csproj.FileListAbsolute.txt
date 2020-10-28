@@ -18,13 +18,13 @@ C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\App\obj\Debug\App.csproj.CoreCompil
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\App\obj\Debug\App.csproj.CopyComplete
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\App\obj\Debug\LadeSkab_App.exe
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\App\obj\Debug\LadeSkab_App.pdb
-C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\LadeSkab_App.exe.config
-C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\LadeSkab_App.exe
-C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\LadeSkab_App.pdb
-C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\LadeSkab.dll
-C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\LadeSkab.pdb
-C:\Users\user\Source\Repos\Ladeskab\App\obj\Debug\App.csprojAssemblyReference.cache
-C:\Users\user\Source\Repos\Ladeskab\App\obj\Debug\App.csproj.CoreCompileInputs.cache
-C:\Users\user\Source\Repos\Ladeskab\App\obj\Debug\App.csproj.CopyComplete
-C:\Users\user\Source\Repos\Ladeskab\App\obj\Debug\LadeSkab_App.exe
-C:\Users\user\Source\Repos\Ladeskab\App\obj\Debug\LadeSkab_App.pdb
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\App\bin\Debug\LadeSkab_App.exe.config
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\App\bin\Debug\LadeSkab_App.exe
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\App\bin\Debug\LadeSkab_App.pdb
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\App\bin\Debug\LadeSkab.dll
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\App\bin\Debug\LadeSkab.pdb
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\App\obj\Debug\App.csprojAssemblyReference.cache
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\App\obj\Debug\App.csproj.CoreCompileInputs.cache
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\App\obj\Debug\App.csproj.CopyComplete
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\App\obj\Debug\LadeSkab_App.exe
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\SWT-E20\Ladeskab\App\obj\Debug\LadeSkab_App.pdb

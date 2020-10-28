@@ -20,9 +20,9 @@ namespace Ladeskab.Test.Unit
         }
 
         [Test]
-        public void ctor_IsConnected()
+        public void ctor_IsNotConnected()
         {
-            Assert.That(_uut.Connected, Is.True);
+            Assert.That(_uut.Connected, Is.False);
         }
 
         [Test]
@@ -101,6 +101,7 @@ namespace Ladeskab.Test.Unit
             };
 
             // Start
+            _uut.SimulateConnected(true);
             _uut.StartCharge();
 
             // Next value should be high
@@ -157,6 +158,7 @@ namespace Ladeskab.Test.Unit
             _uut.SimulateOverload(true);
 
             // Start
+            _uut.SimulateConnected(true);
             _uut.StartCharge();
 
             // Should not wait for first tick, should send overload immediately

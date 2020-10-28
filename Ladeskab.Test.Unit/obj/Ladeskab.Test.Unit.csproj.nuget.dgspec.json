@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj": {}
+    "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj": {
+    "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
+        "projectUniqueName": "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
         "projectName": "Ladeskab.Test.Unit",
-        "projectPath": "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab.Test.Unit\\obj\\",
+        "projectPath": "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
+        "packagesPath": "C:\\Users\\Sonny\\.nuget\\packages\\",
+        "outputPath": "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\Ladeskab.Test.Unit\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sonny\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab\\Ladeskab.csproj": {
-                "projectPath": "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab\\Ladeskab.csproj"
+              "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\Ladeskab\\Ladeskab.csproj": {
+                "projectPath": "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\Ladeskab\\Ladeskab.csproj"
               }
             }
           }
@@ -78,11 +81,11 @@
         }
       }
     },
-    "C:\\Users\\user\\Source\\Repos\\Ladeskab\\LadeSkab\\LadeSkab.csproj": {
+    "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\LadeSkab\\LadeSkab.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Ladeskab\\LadeSkab\\LadeSkab.csproj",
+        "projectUniqueName": "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\LadeSkab\\LadeSkab.csproj",
         "projectName": "LadeSkab",
-        "projectPath": "C:\\Users\\user\\Source\\Repos\\Ladeskab\\LadeSkab\\LadeSkab.csproj"
+        "projectPath": "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\LadeSkab\\LadeSkab.csproj"
       },
       "frameworks": {
         "net472": {}
