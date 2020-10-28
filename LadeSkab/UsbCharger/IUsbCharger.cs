@@ -14,7 +14,7 @@ namespace LadeSkab
 
         // Direct access to the current current value
         double CurrentValue { get; }
-        bool Connected { get; }
+        bool Connected { get; set; }
 
         // Start charging
         void StartCharge();

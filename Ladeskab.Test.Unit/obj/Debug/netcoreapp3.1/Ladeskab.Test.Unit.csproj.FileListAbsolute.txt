@@ -406,3 +406,5 @@ C:\Users\user\Source\Repos\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\L
 C:\Users\user\Source\Repos\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.dll
 C:\Users\user\Source\Repos\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.pdb
 C:\Users\user\Source\Repos\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.genruntimeconfig.cache
+C:\Users\user\Source\Repos\Ladeskab\Ladeskab.Test.Unit\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\user\Source\Repos\Ladeskab\Ladeskab.Test.Unit\bin\Debug\netcoreapp3.1\NSubstitute.dll

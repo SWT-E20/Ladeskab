@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using LadeSkab;
 using Microsoft.VisualStudio.TestPlatform.Utilities;
@@ -21,7 +22,14 @@ namespace Ladeskab.Test.Unit
         [Test]
         public void Print_TestInputValid()
         {
-            
+            var sw = new StringWriter();
+            Console.SetOut(sw);
+
+            _uut.Print("Hello world");
+
+            string output = sw.ToString();
+
+            Assert.That(output, Is.EqualTo("Display: Hello world\r\n"));
         }
     }
 }
