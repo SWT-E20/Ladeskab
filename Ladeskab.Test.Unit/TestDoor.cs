@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using LadeSkab;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace Ladeskab.Test.Unit
         [Test]
         public void ctor_hasDefaultValues()
         {
-            Assert.That(_uut.IsOpen, Is.True);
+            Assert.That(_uut.IsOpen, Is.False);
             Assert.That(_uut.IsLocked, Is.False);
         }
 

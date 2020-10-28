@@ -1,6 +1,9 @@
 ﻿using System;
-using Ladeskab;
-using Ladeskab.Interfaces;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using LadeSkab;
 
 namespace App
 {
@@ -8,52 +11,58 @@ namespace App
     {
         static void Main(string[] args)
         {
-            // Assemble your system here from all the classes
             IDoor door = new Door();
+            IRfidReader rfid = new RfidReader();
+            IDisplay display = new Display();
+            UsbCharger charger = new UsbCharger();
+            IChargeControl chargeControl = new ChargeControl {Charger = charger, Display = display};
 
-            Console.WriteLine("E - close program.");
-            Console.WriteLine("O - open/close door.");
-            Console.WriteLine("R - Scan RFID.\n\n");
+            StationControl ladeSkab = new StationControl();
+            ladeSkab.Door = door;
+            ladeSkab.Rfid = rfid;
+            ladeSkab.ChargeControl = chargeControl;
+
+            Console.WriteLine("e - Close program.");
+            Console.WriteLine("o - Open/close door.");
+            Console.WriteLine("r - Scan RFID.");
+            Console.WriteLine("c - Phone connected.");
+            Console.WriteLine("d - Phone disconnected.\n");
 
             bool finish = false;
             do
             {
                 string input;
+                Console.Write("> ");
                 input = Console.ReadLine();
                 if (string.IsNullOrEmpty(input)) continue;
 
                 switch (input[0])
                 {
-                    case 'E':
                     case 'e':
                         finish = true;
                         break;
 
-                    case 'O':
                     case 'o':
                         door.OnToggleDoor();
                         break;
 
-                    case 'R':
                     case 'r':
-                        System.Console.WriteLine("Indtast RFID id: ");
-                        string idString = System.Console.ReadLine();
+                        Console.WriteLine("Enter RFID id: ");
+                        string inputId = Console.ReadLine();
+                        int id = Convert.ToInt32(inputId);
 
-                        int id = Convert.ToInt32(idString);
-                        //rfidReader.OnRfidRead(id);
+                        rfid.OnKeySwiped(id);
                         break;
 
-                    /////////section for testing///////////
-                    case 'L':
-                    case 'l':
-                        door.LockDoor();
+                    case 'c':
+                        Console.WriteLine("Phone connected.");
+                        charger.SimulateConnected(true);
                         break;
 
-                    case 'U':
-                    case 'u':
-                        door.UnlockDoor();
+                    case 'd':
+                        Console.WriteLine("Phone disconnected.");
+                        charger.SimulateConnected(false);
                         break;
-                    /////////////////////////////////////
 
                     default:
                         Console.WriteLine("!INVALID INPUT!");
@@ -65,4 +74,3 @@ namespace App
         }
     }
 }
-
