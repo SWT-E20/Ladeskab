@@ -4841,11 +4841,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
       "projectName": "Ladeskab.Test.Unit",
-      "projectPath": "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
+      "projectPath": "C:\\Users\\user\\source\\repos\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab.Test.Unit\\obj\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\Ladeskab\\Ladeskab.Test.Unit\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4861,8 +4861,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab\\Ladeskab.csproj": {
-              "projectPath": "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab\\Ladeskab.csproj"
+            "C:\\Users\\user\\source\\repos\\Ladeskab\\Ladeskab\\Ladeskab.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\Ladeskab\\Ladeskab\\Ladeskab.csproj"
             }
           }
         }
