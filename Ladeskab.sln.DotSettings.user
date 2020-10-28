@@ -2,5 +2,6 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=208fe626_002Dbeb5_002D4614_002Dbfed_002D785972d83da0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestUsbCharger" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::3B0E6BB0-9E68-4A75-9FCE-15413232F3B0::.NETCoreApp,Version=v3.1::Ladeskab.Test.Unit.TestUsbCharger&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::3B0E6BB0-9E68-4A75-9FCE-15413232F3B0::.NETCoreApp,Version=v3.1::Ladeskab.Test.Unit.TestDisplay.Print_TestInputValid&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
