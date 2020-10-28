@@ -95,7 +95,6 @@ C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\Ladeskab.Test.Unit\bin\Debug\netcor
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.csprojAssemblyReference.cache
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.AssemblyInfoInputs.cache
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.AssemblyInfo.cs
-C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.csproj.CoreCompileInputs.cache
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.csproj.CopyComplete
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.dll
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.pdb
@@ -406,3 +405,6 @@ D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\Ladeskab\Ladeskab.Test.Unit\
 D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.dll
 D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.pdb
 D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.genruntimeconfig.cache
+C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\Ladeskab.Test.Unit\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\Ladeskab.Test.Unit\bin\Debug\netcoreapp3.1\NSubstitute.dll
+C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.csproj.CoreCompileInputs.cache
