@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace LadeSkab
 {
-
     public class KeySwipedEventArgs : EventArgs
     {
-        public int Id { get; set; }
+        public int Id { set; get; }
     }
     public interface IRfidReader
     {
-        event EventHandler<KeySwipedEventArgs> KeySwipedEvent;
-        
+        event EventHandler<KeySwipedEventArgs> KeySwiped;
+        void OnKeySwiped(int id);
     }
 }

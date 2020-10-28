@@ -8,25 +8,11 @@ namespace LadeSkab
 {
     public class RfidReader : IRfidReader
     {
+        public event EventHandler<KeySwipedEventArgs> KeySwiped;
 
-        public event EventHandler<KeySwipedEventArgs> KeySwipedEvent;
-        
-        //Hjælpe funktion til test
-        private int _oldId;
-        public void SetId(int newId)
+        public void OnKeySwiped(int id)
         {
-            if (newId != _oldId)
-            {
-                OnKeySwiped(new KeySwipedEventArgs() { Id = newId });
-                _oldId = newId;
-            }
+            KeySwiped?.Invoke(this, new KeySwipedEventArgs() { Id = id });
         }
-
-        protected virtual void OnKeySwiped(KeySwipedEventArgs e)
-        {
-            KeySwipedEvent?.Invoke(this, e);
-        }
-
-       
     }
 }

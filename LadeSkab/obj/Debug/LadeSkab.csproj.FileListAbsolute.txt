@@ -34,9 +34,3 @@ D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\Ladeskab\LadeSkab\obj\Debug\
 D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csproj.CoreCompileInputs.cache
 D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\Ladeskab\LadeSkab\obj\Debug\LadeSkab.dll
 D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\Ladeskab\LadeSkab\obj\Debug\LadeSkab.pdb
-C:\Users\user\source\repos\Ladeskab\LadeSkab\bin\Debug\LadeSkab.dll
-C:\Users\user\source\repos\Ladeskab\LadeSkab\bin\Debug\LadeSkab.pdb
-C:\Users\user\source\repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csprojAssemblyReference.cache
-C:\Users\user\source\repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csproj.CoreCompileInputs.cache
-C:\Users\user\source\repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.dll
-C:\Users\user\source\repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.pdb

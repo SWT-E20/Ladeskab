@@ -82,7 +82,7 @@ namespace LadeSkab
             set
             {
                 _rfid = value;
-                _rfid.KeySwipedEvent += HandleRfidDetectedEvent;
+                _rfid.KeySwiped += HandleRfidDetectedEvent;
             }
         }
         private void HandleRfidDetectedEvent(object sender, KeySwipedEventArgs e)
@@ -96,7 +96,7 @@ namespace LadeSkab
                         _door.LockDoor();
                         _charger.StartCharge();
                         _oldId = e.Id;
-                        _logfile.Log($"{DateTime.Now.ToString()}: {e} locked the door.");
+                        _logfile.Log($"{DateTime.Now.ToString()}: {e.Id} locked the door.");
 
                         _display.Print("Door was locked using key.");
                         _state = LadeskabState.Locked;
@@ -109,7 +109,7 @@ namespace LadeSkab
                     break;
 
                 case LadeskabState.DoorOpen:
-                    // Ignore
+                    _display.Print("Please close door before swiping!");
                     break;
 
                 case LadeskabState.Locked:
@@ -118,14 +118,14 @@ namespace LadeSkab
                     {
                         _charger.StopCharge();
                         _door.UnlockDoor();
-                        _logfile.Log($"{DateTime.Now.ToString()}: {e} unlocked the door.");
+                        _logfile.Log($"{DateTime.Now.ToString()}: {e.Id} unlocked the door.");
 
                         _display.Print("Disconnect phone");
                         _state = LadeskabState.Available;
                     }
                     else
                     {
-                        _display.Print($"{e} is an incorrect key.");
+                        _display.Print($"{e.Id} is an incorrect key.");
                     }
 
                     break;
