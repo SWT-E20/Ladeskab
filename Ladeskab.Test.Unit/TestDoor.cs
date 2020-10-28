@@ -26,46 +26,28 @@ namespace Ladeskab.Test.Unit
             Assert.That(_uut.IsLocked, Is.False);
         }
 
-        [Test]
-        public void LockDoor_ReturnCorrectAndAlterState()
+        [TestCase(false, false, true, true)] // success: unlocked and closed
+        [TestCase(false, true, false, false)] // fail: unlocked and open
+        [TestCase(true, false, true, false)] // fail: locked and closed
+        [TestCase(true, true, true, false)] // fail: locked and open
+        public void LockDoor_ReturnCorrectAndAlterState(bool lockState, bool openState, bool lockStateResult, bool returnResult)
         {
-            // unlocked and closed
-            _uut.IsLocked = false; _uut.IsOpen = false;
-            Assert.That(_uut.LockDoor(), Is.True);
-            Assert.That(_uut.IsLocked, Is.True); // memeber changes to locked
+            _uut.IsLocked = lockState; _uut.IsOpen = openState;
 
-            // unlocked and open
-            _uut.IsLocked = false; _uut.IsOpen = true;
-            Assert.That(_uut.LockDoor(), Is.False);
-
-            // locked and closed
-            _uut.IsLocked = true; _uut.IsOpen = false;
-            Assert.That(_uut.LockDoor(), Is.False);
-
-            // locked and open
-            _uut.IsLocked = true; _uut.IsOpen = true;
-            Assert.That(_uut.LockDoor(), Is.False);
+            Assert.That(_uut.LockDoor(), Is.EqualTo(returnResult));
+            Assert.That(_uut.IsLocked, Is.EqualTo(lockStateResult)); // memeber changes to locked
         }
 
-        [Test]
-        public void UnlockDoor_ReturnCorrectAndAlterState()
+        [TestCase(false, false, false, false)] // fail: unlocked and closed
+        [TestCase(false, true, false, false)] // fail: unlocked and open
+        [TestCase(true, false, false, true)] // success: locked and closed
+        [TestCase(true, true, true, false)] // fail: locked and open
+        public void UnlockDoor_ReturnCorrectAndAlterState(bool lockState, bool openState, bool lockStateResult, bool returnResult)
         {
-            // unlocked and closed
-            _uut.IsLocked = false; _uut.IsOpen = false;
-            Assert.That(_uut.UnlockDoor(), Is.False);
+            _uut.IsLocked = lockState; _uut.IsOpen = openState;
 
-            // unlocked and open
-            _uut.IsLocked = false; _uut.IsOpen = true;
-            Assert.That(_uut.UnlockDoor(), Is.False);
-
-            // locked and closed
-            _uut.IsLocked = true; _uut.IsOpen = false;
-            Assert.That(_uut.UnlockDoor(), Is.True);
-            Assert.That(_uut.IsLocked, Is.False); // member changes to unlocked
-
-            // locked and open
-            _uut.IsLocked = true; _uut.IsOpen = true;
-            Assert.That(_uut.UnlockDoor(), Is.False);
+            Assert.That(_uut.UnlockDoor(), Is.EqualTo(returnResult));
+            Assert.That(_uut.IsLocked, Is.EqualTo(lockStateResult)); // memeber changes to locked
         }
 
         [Test]
