@@ -4668,11 +4668,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
+      "projectUniqueName": "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
       "projectName": "Ladeskab.Test.Unit",
-      "projectPath": "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
+      "projectPath": "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
       "packagesPath": "C:\\Users\\Sonny\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\Ladeskab.Test.Unit\\obj\\",
+      "outputPath": "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\Ladeskab\\Ladeskab.Test.Unit\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4691,8 +4691,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\Ladeskab\\Ladeskab.csproj": {
-              "projectPath": "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\SWT-E20\\Ladeskab\\Ladeskab\\Ladeskab.csproj"
+            "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\Ladeskab\\Ladeskab\\Ladeskab.csproj": {
+              "projectPath": "D:\\Visual Studios Projekter\\Semester4_2\\SWT\\Handin2\\Ladeskab\\Ladeskab\\Ladeskab.csproj"
             }
           }
         }
