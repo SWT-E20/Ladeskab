@@ -26,7 +26,7 @@ namespace LadeSkab
         private ILogFile _logfile;
         private IRfidReader _rfid;
 
-        private int _oldId;
+        private int _oldId { get; set; }
 
         private string logFile = "logfile.txt"; // Navnet på systemets log-fil
 
@@ -82,10 +82,10 @@ namespace LadeSkab
             set
             {
                 _rfid = value;
-                _rfid.KeySwiped += HandleRfidDetectedEvent;
+                _rfid.KeySwipedEvent += HandleRfidDetectedEvent;
             }
         }
-        private void HandleRfidDetectedEvent(object sender, int id)
+        private void HandleRfidDetectedEvent(object sender, KeySwipedEventArgs e)
         {
             switch (_state)
             {
@@ -95,8 +95,8 @@ namespace LadeSkab
                     {
                         _door.LockDoor();
                         _charger.StartCharge();
-                        _oldId = id;
-                        _logfile.Log($"{DateTime.Now.ToString()}: {id} locked the door.");
+                        _oldId = e.Id;
+                        _logfile.Log($"{DateTime.Now.ToString()}: {e} locked the door.");
 
                         _display.Print("Door was locked using key.");
                         _state = LadeskabState.Locked;
@@ -114,18 +114,18 @@ namespace LadeSkab
 
                 case LadeskabState.Locked:
                     // Check for correct ID
-                    if (id == _oldId)
+                    if (e.Id == _oldId)
                     {
                         _charger.StopCharge();
                         _door.UnlockDoor();
-                        _logfile.Log($"{DateTime.Now.ToString()}: {id} unlocked the door.");
+                        _logfile.Log($"{DateTime.Now.ToString()}: {e} unlocked the door.");
 
                         _display.Print("Disconnect phone");
                         _state = LadeskabState.Available;
                     }
                     else
                     {
-                        _display.Print($"{id} is an incorrect key.");
+                        _display.Print($"{e} is an incorrect key.");
                     }
 
                     break;
