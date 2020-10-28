@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LadeSkab;
+using NSubstitute;
 
 namespace App
 {
@@ -50,8 +51,8 @@ namespace App
                         Console.WriteLine("Enter RFID id: ");
                         string inputId = Console.ReadLine();
                         int id = Convert.ToInt32(inputId);
-
-                        rfid.OnKeySwiped(id);
+                        //raise events from main
+                        rfid.KeySwipedEvent += Raise.EventWith(new KeySwipedEventArgs() {Id = id});
                         break;
 
                     case 'c':

@@ -38,3 +38,9 @@ C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\LadeSkab_App.pdb
 C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\LadeSkab.dll
 C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\LadeSkab.pdb
 C:\Users\user\Source\Repos\Ladeskab\App\obj\Debug\App.csproj.CopyComplete
+C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\Castle.Core.dll
+C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\NSubstitute.dll
+C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\Castle.Core.xml
+C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\NSubstitute.xml
+C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\System.Threading.Tasks.Extensions.xml

@@ -10,7 +10,8 @@ namespace LadeSkab
     {
 
         public event EventHandler<KeySwipedEventArgs> KeySwipedEvent;
-
+        
+        //Hjælpe funktion til test
         private int _oldId;
         public void SetId(int newId)
         {
@@ -21,14 +22,11 @@ namespace LadeSkab
             }
         }
 
-        public void OnKeySwiped(KeySwipedEventArgs e)
+        protected virtual void OnKeySwiped(KeySwipedEventArgs e)
         {
             KeySwipedEvent?.Invoke(this, e);
         }
 
-        public void OnKeySwiped(int id)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

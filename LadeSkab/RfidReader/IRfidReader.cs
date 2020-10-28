@@ -14,7 +14,6 @@ namespace LadeSkab
     public interface IRfidReader
     {
         event EventHandler<KeySwipedEventArgs> KeySwipedEvent;
-        void OnKeySwiped(KeySwipedEventArgs id);
-        void OnKeySwiped(int id);
+        
     }
 }
