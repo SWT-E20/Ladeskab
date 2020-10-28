@@ -22,3 +22,9 @@ C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csprojA
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csproj.CoreCompileInputs.cache
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\LadeSkab\obj\Debug\LadeSkab.dll
 C:\Users\mvraa\Documents\GitHub\SWT\Ladeskab\LadeSkab\obj\Debug\LadeSkab.pdb
+C:\Users\user\Source\Repos\Ladeskab\LadeSkab\bin\Debug\LadeSkab.dll
+C:\Users\user\Source\Repos\Ladeskab\LadeSkab\bin\Debug\LadeSkab.pdb
+C:\Users\user\Source\Repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csprojAssemblyReference.cache
+C:\Users\user\Source\Repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.dll
+C:\Users\user\Source\Repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.pdb
