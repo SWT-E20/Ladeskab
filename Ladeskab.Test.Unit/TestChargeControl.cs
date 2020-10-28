@@ -55,5 +55,20 @@ namespace Ladeskab.Test.Unit
 
             Assert.That(_uut.Connected(), Is.EqualTo(c));
         }
+
+        [TestCase(0, ChargeControl.ChargeControlState.NoConnection)]
+        [TestCase(2, ChargeControl.ChargeControlState.FullCharge)]
+        [TestCase(6, ChargeControl.ChargeControlState.Charging)]
+        [TestCase(600, ChargeControl.ChargeControlState.Overload)]
+        public void ChangedEvent_stateChangesCorrectly(double charge, ChargeControl.ChargeControlState resultState)
+        {
+            // raise event using test charge as argument:
+            _charger.CurrentValueEvent += Raise.EventWith(
+                new CurrentEventArgs() { 
+                    Current = charge
+                });
+
+            Assert.That(_uut._state, Is.EqualTo(resultState));
+        }
     }
 }

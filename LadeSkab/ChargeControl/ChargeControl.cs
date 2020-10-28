@@ -17,7 +17,7 @@ namespace LadeSkab
             Overload
         };
 
-        private ChargeControlState _state;
+        public ChargeControlState _state;
         private ChargeControlState _prevState;
 
         private IDisplay _display;
