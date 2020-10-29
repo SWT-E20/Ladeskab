@@ -27,6 +27,17 @@ namespace Ladeskab.Test.Unit
             Assert.That(_uut._prevState, Is.EqualTo(ChargeControl.ChargeControlState.Undefined));
         }
 
+        [Test]
+        public void HandleCurrentChangedEvent_SetPrevStateAndState_PrevStateAndStateIsEqual()
+        {
+            _uut._prevState = ChargeControl.ChargeControlState.NoConnection;
+            _uut._state = ChargeControl.ChargeControlState.NoConnection;
+
+            _charger.CurrentValueEvent += Raise.EventWith(new CurrentEventArgs());
+
+            Assert.That(_uut._prevState, Is.EqualTo(_uut._state));
+        }
+
         [TestCase(1)]
         [TestCase(2)]
         [TestCase(3)]
