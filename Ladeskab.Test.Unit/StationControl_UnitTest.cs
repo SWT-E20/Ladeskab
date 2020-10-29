@@ -50,6 +50,21 @@ namespace Ladeskab.Test.Unit
             _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 1 });
             _door.Received(0).LockDoor();
         }
+        [Test]
+        public void ReadRFID_Startcharg()
+        {
+            _charger.Connected().Returns(true);
+            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 25 });
+            _charger.Received(0).StartCharge();
+        }
+
+        [Test]
+        public void ReadRFID_Display()
+        {
+            _charger.Connected().Returns(true);
+            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 25 });
+            _display.Received(0).Print("  the door now is closed");
+        }
 
 
     }
