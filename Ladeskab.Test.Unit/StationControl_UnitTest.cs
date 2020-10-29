@@ -43,13 +43,13 @@ namespace Ladeskab.Test.Unit
             _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs {  Id= tag });
             Assert.That(_uut.ReadRFIDTag, Is.EqualTo(tag));
         }
-        //[Test]
-        //public void ReadRFID_LockDoorCalled_InAvailable()
-        //{
-        //    _charger.Connected().Returns(true);
-        //    _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 32 });
-        //    _door.Received(1).LockDoor();
-        //}
+        [Test]
+        public void ReadRFID_LockDoorStatus()
+        {
+            _charger.Connected().Returns(true);
+            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 1 });
+            _door.Received(0).LockDoor();
+        }
 
 
     }
