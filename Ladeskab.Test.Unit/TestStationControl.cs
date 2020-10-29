@@ -45,6 +45,15 @@ namespace Ladeskab.Test.Unit
             _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs {  Id= tag });
             Assert.That(_uut.ReadRFIDTag, Is.EqualTo(tag));
         }
+
+        [Test]
+        public void HandleDoorStatusEvent_DoorClosedAndChargerConnected_PrintCorrectMessage()
+        {
+            _charger.Connected().Returns(true);
+            _door.DoorStatusChanged += Raise.EventWith(new DoorStateChangedEventArgs {IsOpen = false});
+            _display.Received(1).Print("Swipe key");
+        }
+
         [Test]
         public void ReadRFID_LockDoorStatus()
         {
