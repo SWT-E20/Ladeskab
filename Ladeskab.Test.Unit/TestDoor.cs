@@ -36,7 +36,7 @@ namespace Ladeskab.Test.Unit
                 _currentDoorStatus = args.IsOpen;
             };
 
-            _uut.OnToggleDoor();
+            _uut.ToggleDoor();
 
             Assert.That(_currentDoorStatus, Is.EqualTo(true));
         }
@@ -66,21 +66,21 @@ namespace Ladeskab.Test.Unit
         }
 
         [Test]
-        public void OnToggleDoor_ReturnCorrectAndAlterState()
+        public void ToggleDoor_ReturnCorrectAndAlterState()
         {
             _uut.IsOpen = true; _uut.IsLocked = false;
 
             // toggle door when open and unlocked
-            Assert.That(_uut.OnToggleDoor(), Is.True);
+            Assert.That(_uut.ToggleDoor(), Is.True);
             Assert.That(_uut.IsOpen, Is.False);
-            Assert.That(_uut.OnToggleDoor(), Is.True);
+            Assert.That(_uut.ToggleDoor(), Is.True);
             Assert.That(_uut.IsOpen, Is.True);
 
             // toggle door when closed and locked
-            _uut.OnToggleDoor(); // close door
+            _uut.ToggleDoor(); // close door
             _uut.IsLocked = true; // lock it
 
-            Assert.That(_uut.OnToggleDoor(), Is.False); // try to open
+            Assert.That(_uut.ToggleDoor(), Is.False); // try to open
             Assert.That(_uut.IsOpen, Is.False);
         }
     }
