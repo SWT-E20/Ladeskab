@@ -16,6 +16,6 @@ namespace LadeSkab
         event EventHandler<DoorStateChangedEventArgs> DoorStatusChanged;
         bool LockDoor();
         bool UnlockDoor();
-        bool OnToggleDoor();
+        bool ToggleDoor();
     }
 }

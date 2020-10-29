@@ -42,7 +42,7 @@ namespace App
                         break;
 
                     case 'o':
-                        door.OnToggleDoor();
+                        door.ToggleDoor();
                         break;
 
                     case 'r':

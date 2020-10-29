@@ -44,7 +44,7 @@ namespace LadeSkab
             return true;
         }
 
-        public bool OnToggleDoor()
+        public bool ToggleDoor()
         {
             // close door if open:
             if (IsOpen)
