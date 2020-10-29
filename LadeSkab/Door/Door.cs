@@ -54,7 +54,7 @@ namespace LadeSkab
             {
                 Console.WriteLine("Door closed.");
 
-                //IsOpen = false;
+                IsOpen = false;
                 OnDoorStatusChange(new DoorStateChangedEventArgs{IsOpen = false}); // send door's updated status
                 return true;
             }

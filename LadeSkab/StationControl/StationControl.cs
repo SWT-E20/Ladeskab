@@ -20,6 +20,7 @@ namespace LadeSkab
 
         // member variable
         public bool DoorState { get; set; }
+        public int ReadRFIDTag { get; set; }
         private LadeskabState _state;
 
         private IChargeControl _charger;
@@ -40,8 +41,8 @@ namespace LadeSkab
             Door = new Door();
             Logfile = new LogFile(logFile);
             Rfid = new RfidReader();
-            doorStatus.DoorStatusChanged += HandleDoorStatusEvent;
-            rfidReader.KeySwiped+=HandleRfidDetectedEvent;
+            //doorStatus.DoorStatusChanged += HandleDoorStatusEvent;
+            //rfidReader.KeySwiped+=HandleRfidDetectedEvent;
 
             _door = doorStatus;
             _display = display;
@@ -95,6 +96,7 @@ namespace LadeSkab
         }
         private void HandleRfidDetectedEvent(object sender, KeySwipedEventArgs e)
         {
+            ReadRFIDTag = e.Id;
             switch (_state)
             {
                 case LadeskabState.Available:
@@ -103,8 +105,8 @@ namespace LadeSkab
                     {
                         _door.LockDoor();
                         _charger.StartCharge();
-                        _oldId = e.Id;
-                        _logfile.Log($"{DateTime.Now.ToString()}: {e.Id} locked the door.");
+                        _oldId = ReadRFIDTag;
+                        _logfile.Log($"{DateTime.Now.ToString()}: {ReadRFIDTag} locked the door.");
 
                         _display.Print("Door was locked using key.");
                         _state = LadeskabState.Locked;
@@ -122,18 +124,18 @@ namespace LadeSkab
 
                 case LadeskabState.Locked:
                     // Check for correct ID
-                    if (e.Id == _oldId)
+                    if (ReadRFIDTag == _oldId)
                     {
                         _charger.StopCharge();
                         _door.UnlockDoor();
-                        _logfile.Log($"{DateTime.Now.ToString()}: {e.Id} unlocked the door.");
+                        _logfile.Log($"{DateTime.Now.ToString()}: {ReadRFIDTag} unlocked the door.");
 
                         _display.Print("Disconnect phone");
                         _state = LadeskabState.Available;
                     }
                     else
                     {
-                        _display.Print($"{e.Id} is an incorrect key.");
+                        _display.Print($"{ReadRFIDTag} is an incorrect key.");
                     }
 
                     break;
