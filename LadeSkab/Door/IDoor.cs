@@ -7,6 +7,10 @@ using static LadeSkab.Door;
 
 namespace LadeSkab
 {
+    public class DoorStateChangedEventArgs : EventArgs
+    {
+        public bool IsOpen { get; set; }
+    }
     public interface IDoor
     {
         event EventHandler<DoorStateChangedEventArgs> DoorStatusChanged;

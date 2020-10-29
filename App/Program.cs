@@ -14,6 +14,7 @@ namespace App
             IDoor door = new Door();
             IRfidReader rfid = new RfidReader();
             IDisplay display = new Display();
+
             UsbCharger charger = new UsbCharger();
             IChargeControl chargeControl = new ChargeControl {Charger = charger, Display = display};
 
