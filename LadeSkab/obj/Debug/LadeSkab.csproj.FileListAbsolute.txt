@@ -40,3 +40,9 @@ C:\Users\Ferhad\source\repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csprojAssembly
 C:\Users\Ferhad\source\repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csproj.CoreCompileInputs.cache
 C:\Users\Ferhad\source\repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.dll
 C:\Users\Ferhad\source\repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.pdb
+C:\Users\user\Source\Repos\Ladeskab\LadeSkab\bin\Debug\LadeSkab.dll
+C:\Users\user\Source\Repos\Ladeskab\LadeSkab\bin\Debug\LadeSkab.pdb
+C:\Users\user\Source\Repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csprojAssemblyReference.cache
+C:\Users\user\Source\Repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.dll
+C:\Users\user\Source\Repos\Ladeskab\LadeSkab\obj\Debug\LadeSkab.pdb

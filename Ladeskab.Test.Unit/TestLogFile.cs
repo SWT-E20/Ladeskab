@@ -6,32 +6,40 @@ using LadeSkab;
 using NSubstitute;
 using System.IO;
 using Microsoft.VisualBasic;
+using Newtonsoft.Json.Linq;
 
 namespace Ladeskab.Test.Unit
 {
     [TestFixture]
     public class TestLogFile
     {
-       // private LogFile _uut;
-       //// private LogFile _logFile;
-       // [SetUp]
-       // public void Setup()
-       // {
-       //    // _logFile = Substitute.For<LogFile>();
-       //     _uut = new LogFile(ToString());
-       // }
+        private LogFile _uut;
+        StringWriter stringResult;
 
-        //[Test]
-        //public void Log_Test_Val()
-        //{
-        //    var sw = new StringWriter();
-        //    Console.SetOut(sw);
-        //    _uut.Log("right");
-        //    string output = sw.ToString();
+        [SetUp]
+        public void Setup()
+        {
+            stringResult = new StringWriter();
+            Console.SetOut(stringResult);
+            _uut = new LogFile("TestFile.txt");
+        }
 
-        //    Assert.That(output, Is.EqualTo("right\r\n"));
-        //    // Assert.AreSame();
 
-        //}
+        [Test]
+        public void ctor_Log_Created()
+        {
+            Assert.That(File.Exists(_uut.Path), Is.True);
+        }
+
+        public void TestLogContent()
+        {
+            _uut.Log("test");
+            
+            string[] lines = File.ReadAllLines(_uut.Path);
+            foreach(string line in lines)
+                Assert.That(line, Is.EqualTo("test"));
+
+            File.Delete(_uut.Path);
+        }
     }
 }
