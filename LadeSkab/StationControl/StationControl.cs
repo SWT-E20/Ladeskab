@@ -114,7 +114,7 @@ namespace LadeSkab
                     }
                     else
                     {
-                        _display.Print($"{ReadRFIDTag} is an incorrect key.");
+                        _display.Print(" is an incorrect key.");
                     }
 
                     break;
