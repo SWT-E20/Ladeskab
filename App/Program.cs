@@ -17,7 +17,7 @@ namespace App
             ILogFile logfile = new LogFile("logfile.txt");
 
             UsbCharger charger = new UsbCharger();
-            IChargeControl chargeControl = new ChargeControl {Charger = charger, Display = display};
+            IChargeControl chargeControl = new ChargeControl (display, charger);
 
             StationControl ladeSkab = new StationControl(door, rfid, display, chargeControl, logfile);
 
