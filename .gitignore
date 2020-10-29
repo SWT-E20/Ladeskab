@@ -1,3 +1,16 @@
 
 *.cache
 .vs/Ladeskab/v16/TestStore/0/038.testlog
+LadeSkab/obj/Debug/LadeSkab.pdb
+LadeSkab/obj/Debug/LadeSkab.dll
+LadeSkab/obj/Debug/LadeSkab.csprojAssemblyReference.cache
+LadeSkab/bin/Debug/LadeSkab.pdb
+LadeSkab/bin/Debug/LadeSkab.dll
+App/obj/Debug/LadeSkab_App.pdb
+App/obj/Debug/LadeSkab_App.exe
+App/obj/Debug/App.csprojAssemblyReference.cache
+App/bin/Debug/logfile.txt
+App/bin/Debug/LadeSkab_App.pdb
+App/bin/Debug/LadeSkab_App.exe
+App/bin/Debug/LadeSkab.pdb
+App/bin/Debug/LadeSkab.dll
