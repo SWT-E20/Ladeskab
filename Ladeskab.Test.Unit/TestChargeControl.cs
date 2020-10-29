@@ -20,6 +20,13 @@ namespace Ladeskab.Test.Unit
             _uut = new ChargeControl { Charger = _charger, Display = _display };
         }
 
+        [Test]
+        public void ctor_hasDefaultValues()
+        {
+            Assert.That(_uut._state, Is.EqualTo(ChargeControl.ChargeControlState.NoConnection));
+            Assert.That(_uut._prevState, Is.EqualTo(ChargeControl.ChargeControlState.Undefined));
+        }
+
         [TestCase(1)]
         [TestCase(2)]
         [TestCase(3)]
