@@ -61,6 +61,15 @@ namespace Ladeskab.Test.Unit
         }
 
         [Test]
+        public void HandleRfidDetectedEvent_DoorOpenAndSwipeDetected_PrintCorrectMessage()
+        {
+            _charger.Connected().Returns(true);
+            _door.DoorStatusChanged += Raise.EventWith(new DoorStateChangedEventArgs { IsOpen = true });
+            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs());
+            _display.Received(1).Print("Please close door before swiping!");
+        }
+
+        [Test]
         public void ReadRFID_LockDoorStatus()
         {
             _charger.Connected().Returns(true);
