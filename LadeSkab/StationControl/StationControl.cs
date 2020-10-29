@@ -34,19 +34,14 @@ namespace LadeSkab
         private string logFile = "logfile.txt"; // Navnet på systemets log-fil
 
         // constructor
-        public StationControl(IDoor doorStatus, IRfidReader rfidReader, IDisplay display, IChargeControl charger)
+        public StationControl()
         {
             ChargeControl = new ChargeControl();
             Display = new Display();
             Door = new Door();
             Logfile = new LogFile(logFile);
             Rfid = new RfidReader();
-            //doorStatus.DoorStatusChanged += HandleDoorStatusEvent;
-            //rfidReader.KeySwiped+=HandleRfidDetectedEvent;
 
-            _door = doorStatus;
-            _display = display;
-            _charger = charger;
             _state = LadeskabState.Available;
         }
 
