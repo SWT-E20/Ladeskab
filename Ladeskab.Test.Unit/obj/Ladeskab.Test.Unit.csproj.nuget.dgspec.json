@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ferhad\\source\\repos\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj": {}
+    "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ferhad\\source\\repos\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj": {
+    "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ferhad\\source\\repos\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
+        "projectUniqueName": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
         "projectName": "Ladeskab.Test.Unit",
-        "projectPath": "C:\\Users\\Ferhad\\source\\repos\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
-        "packagesPath": "C:\\Users\\Ferhad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ferhad\\source\\repos\\Ladeskab\\Ladeskab.Test.Unit\\obj\\",
+        "projectPath": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
+        "packagesPath": "C:\\Users\\mvraa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab.Test.Unit\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ferhad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mvraa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Ferhad\\source\\repos\\Ladeskab\\Ladeskab\\Ladeskab.csproj": {
-                "projectPath": "C:\\Users\\Ferhad\\source\\repos\\Ladeskab\\Ladeskab\\Ladeskab.csproj"
+              "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab\\Ladeskab.csproj": {
+                "projectPath": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab\\Ladeskab.csproj"
               }
             }
           }
@@ -78,15 +78,15 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ferhad\\source\\repos\\Ladeskab\\LadeSkab\\LadeSkab.csproj": {
+    "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\LadeSkab\\LadeSkab.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ferhad\\source\\repos\\Ladeskab\\LadeSkab\\LadeSkab.csproj",
+        "projectUniqueName": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\LadeSkab\\LadeSkab.csproj",
         "projectName": "LadeSkab",
-        "projectPath": "C:\\Users\\Ferhad\\source\\repos\\Ladeskab\\LadeSkab\\LadeSkab.csproj"
+        "projectPath": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\LadeSkab\\LadeSkab.csproj"
       },
       "frameworks": {
         "net472": {}

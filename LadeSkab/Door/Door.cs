@@ -8,6 +8,8 @@ namespace LadeSkab
 {
     public class Door : IDoor
     {
+        public event EventHandler<DoorStateChangedEventArgs> DoorStatusChanged;
+
         public bool IsLocked { get; set; }
         public bool IsOpen { get; set; }
 
@@ -17,14 +19,9 @@ namespace LadeSkab
             IsOpen = false;
         }
 
-        public class DoorStateChangedEventArgs : EventArgs
+        private void OnDoorStatusChange()
         {
-            public bool IsOpen { get; set; }
-        }
-        public event EventHandler<DoorStateChangedEventArgs> DoorStatusChanged;
-        private void OnDoorStatusChange(DoorStateChangedEventArgs e)
-        {
-            DoorStatusChanged?.Invoke(this, e);
+            DoorStatusChanged?.Invoke(this, new DoorStateChangedEventArgs { IsOpen = this.IsOpen });
         }
 
         public bool LockDoor()
@@ -55,7 +52,7 @@ namespace LadeSkab
                 Console.WriteLine("Door closed.");
 
                 IsOpen = false;
-                OnDoorStatusChange(new DoorStateChangedEventArgs{IsOpen = false}); // send door's updated status
+                OnDoorStatusChange(); // send door's updated status
                 return true;
             }
 
@@ -65,7 +62,7 @@ namespace LadeSkab
                 Console.WriteLine("Door opened.");
 
                 IsOpen = true;
-                OnDoorStatusChange(new DoorStateChangedEventArgs { IsOpen = true }); // send door's updated status
+                OnDoorStatusChange(); // send door's updated status
                 return true;
             }
             Console.WriteLine("Can't open - door is locked!");

@@ -45,3 +45,7 @@
 10/28/2020 4:23:24 PM: 123 unlocked the door.
 10/28/2020 4:27:16 PM: 123 locked the door.
 10/28/2020 4:27:26 PM: 123 unlocked the door.
+10/29/2020 10:25:07 AM: 1234 locked the door.
+10/29/2020 10:25:27 AM: 1234 unlocked the door.
+10/29/2020 10:35:16 AM: 123 locked the door.
+10/29/2020 10:35:20 AM: 123 unlocked the door.
