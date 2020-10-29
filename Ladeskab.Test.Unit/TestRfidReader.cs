@@ -10,33 +10,30 @@ namespace Ladeskab.Test.Unit
     [TestFixture]
     public class TestRfidReader
     {
-        //private RfidReader _uut;
-        //private KeySwipedEventArgs _onKeySwipe;
+        private RfidReader _uut;
+        private int _testId;
 
-        //[SetUp]
-        //public void SetUp()
-        //{
-        //    _onKeySwipe = null;
+        [SetUp]
+        public void SetUp()
+        {
+            _uut = new RfidReader();
+        }
 
-        //    _uut = new RfidReader();
+        [TestCase(0, 0)]
+        [TestCase(1, 1)]
+        [TestCase(2, 2)]
+        public void OnKeySwiped_InputID_IDIsSet(int id, int result)
+        {
+            _uut.KeySwiped += (o, args) =>
+            {
+                _testId = args.Id;
+            };
 
-        //    _uut.KeySwipedEvent +=
-        //        (o, args) => { _onKeySwipe = args; };
-        //}
+            _uut.OnKeySwiped(id);
+            Assert.That(_testId, Is.EqualTo(result));
+        }
 
-        //[Test]
-        //public void SetId_IdSetToNewValue_EventFired()
-        //{
-        //    _uut.SetId(25);
-        //    Assert.That(_onKeySwipe, Is.Not.Null);
-        //}
-
-        //[Test]
-        //public void SetId_IdSetToNewValue_CorrectValueReceived()
-        //{
-        //    _uut.SetId(666);
-        //    Assert.That(_onKeySwipe.Id, Is.EqualTo(666));
-        //}
+        
 
     }
 
