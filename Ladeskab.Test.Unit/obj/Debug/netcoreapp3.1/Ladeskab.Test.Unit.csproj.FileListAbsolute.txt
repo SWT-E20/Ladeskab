@@ -512,3 +512,5 @@ C:\Users\Ferhad\source\repos\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1
 C:\Users\Ferhad\source\repos\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.dll
 C:\Users\Ferhad\source\repos\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.pdb
 C:\Users\Ferhad\source\repos\Ladeskab\Ladeskab.Test.Unit\obj\Debug\netcoreapp3.1\Ladeskab.Test.Unit.genruntimeconfig.cache
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\Ladeskab\Ladeskab.Test.Unit\bin\Debug\netcoreapp3.1\Castle.Core.dll
+D:\Visual Studios Projekter\Semester4_2\SWT\Handin2\Ladeskab\Ladeskab.Test.Unit\bin\Debug\netcoreapp3.1\NSubstitute.dll
