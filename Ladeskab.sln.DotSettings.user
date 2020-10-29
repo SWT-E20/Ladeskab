@@ -2,6 +2,9 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2e00501a_002D9f87_002D40cf_002Db939_002D41b3ecfef839/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=82b8dd80_002D6c35_002D475f_002Db48a_002Dcb825e3a5440/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8623dac0_002Db868_002D4c89_002D9858_002De78e20a5ed02/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Log_Test_Val" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
@@ -10,9 +13,4 @@
     &lt;TestId&gt;NUnit3x::3B0E6BB0-9E68-4A75-9FCE-15413232F3B0::.NETCoreApp,Version=v3.1::Ladeskab.Test.Unit.TestRfidReader.SetId_IdSetToNewValue_EventFired&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b220b4d1_002Dca11_002D4711_002Db3fb_002Dfe4cd6b6fd0c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SetId_IdSetToNewValue_EventFired #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3B0E6BB0-9E68-4A75-9FCE-15413232F3B0::.NETCoreApp,Version=v3.1::Ladeskab.Test.Unit.TestRfidReader&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3B0E6BB0-9E68-4A75-9FCE-15413232F3B0::.NETCoreApp,Version=v3.1::Ladeskab.Test.Unit.TestDoor&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+	</wpf:ResourceDictionary>

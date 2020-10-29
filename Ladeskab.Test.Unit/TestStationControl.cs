@@ -38,7 +38,7 @@ namespace Ladeskab.Test.Unit
             Assert.That(_uut.DoorState, Is.EqualTo(state));
         }
 
-       // [TestCase(1)]
+        [TestCase(1)]
         [TestCase(0)]
         public void ReadRFID_With_Arguments_test(int tag)
         {
@@ -49,7 +49,7 @@ namespace Ladeskab.Test.Unit
         public void ReadRFID_LockDoorStatus()
         {
             _charger.Connected().Returns(true);
-            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 1 });
+            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 25 });
             _door.Received(1).LockDoor();
         }
         [Test]
@@ -67,7 +67,14 @@ namespace Ladeskab.Test.Unit
             _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 25 });
             _display.Received(0).Print("  the door now is closed");
         }
-
+        [Test]
+        public void ReadRFID_Stopcharging()
+        {
+            _charger.Connected().Returns(true);
+            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 25 });
+            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 25 });
+            _charger.Received(1).StopCharge();
+        }
 
     }
 }
