@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static LadeSkab.Door;
 
 namespace LadeSkab
 {
@@ -18,6 +19,7 @@ namespace LadeSkab
         };
 
         // member variable
+        public bool DoorState { get; set; }
         private LadeskabState _state;
 
         private IChargeControl _charger;
@@ -31,14 +33,19 @@ namespace LadeSkab
         private string logFile = "logfile.txt"; // Navnet på systemets log-fil
 
         // constructor
-        public StationControl()
+        public StationControl(IDoor doorStatus, IRfidReader rfidReader, IDisplay display, IChargeControl charger)
         {
             ChargeControl = new ChargeControl();
             Display = new Display();
             Door = new Door();
             Logfile = new LogFile(logFile);
             Rfid = new RfidReader();
+            doorStatus.DoorStatusChanged += HandleDoorStatusEvent;
+            rfidReader.KeySwiped+=HandleRfidDetectedEvent;
 
+            _door = doorStatus;
+            _display = display;
+            _charger = charger;
             _state = LadeskabState.Available;
         }
 
@@ -54,9 +61,10 @@ namespace LadeSkab
             }
         }
 
-        private void HandleDoorStatusEvent(object sender, bool isOpen)
+        private void HandleDoorStatusEvent(object sender, DoorStateChangedEventArgs e)
         {
-            if (isOpen)
+            DoorState = e.IsOpen;
+            if (DoorState)
             {
                 _state = LadeskabState.DoorOpen;
                 if (!_charger.Connected())

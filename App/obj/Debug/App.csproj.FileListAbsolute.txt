@@ -38,3 +38,13 @@ C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\LadeSkab_App.pdb
 C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\LadeSkab.dll
 C:\Users\user\Source\Repos\Ladeskab\App\bin\Debug\LadeSkab.pdb
 C:\Users\user\Source\Repos\Ladeskab\App\obj\Debug\App.csproj.CopyComplete
+C:\Users\Ferhad\source\repos\Ladeskab\App\bin\Debug\LadeSkab_App.exe.config
+C:\Users\Ferhad\source\repos\Ladeskab\App\bin\Debug\LadeSkab_App.exe
+C:\Users\Ferhad\source\repos\Ladeskab\App\bin\Debug\LadeSkab_App.pdb
+C:\Users\Ferhad\source\repos\Ladeskab\App\bin\Debug\LadeSkab.dll
+C:\Users\Ferhad\source\repos\Ladeskab\App\bin\Debug\LadeSkab.pdb
+C:\Users\Ferhad\source\repos\Ladeskab\App\obj\Debug\App.csprojAssemblyReference.cache
+C:\Users\Ferhad\source\repos\Ladeskab\App\obj\Debug\App.csproj.CoreCompileInputs.cache
+C:\Users\Ferhad\source\repos\Ladeskab\App\obj\Debug\App.csproj.CopyComplete
+C:\Users\Ferhad\source\repos\Ladeskab\App\obj\Debug\LadeSkab_App.exe
+C:\Users\Ferhad\source\repos\Ladeskab\App\obj\Debug\LadeSkab_App.pdb
