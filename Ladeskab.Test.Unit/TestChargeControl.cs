@@ -17,7 +17,7 @@ namespace Ladeskab.Test.Unit
             _display = Substitute.For<IDisplay>();
             _charger = Substitute.For<IUsbCharger>();
 
-            _uut = new ChargeControl { Charger = _charger, Display = _display };
+            _uut = new ChargeControl (_display, _charger);
         }
 
         [Test]

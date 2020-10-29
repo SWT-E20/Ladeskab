@@ -23,51 +23,31 @@ namespace LadeSkab
         private IDisplay _display;
         private IUsbCharger _charger;
 
-        public ChargeControl()
+        public ChargeControl(IDisplay display, IUsbCharger charger)
         {
             _state = ChargeControlState.NoConnection;
             _prevState = ChargeControlState.Undefined;
 
-            Display = new Display();
-            Charger = new UsbCharger();
+            _display = display;
+            _charger = charger;
+
+            _charger.CurrentValueEvent += HandleCurrentChangedEvent;
         }
 
         public void StartCharge()
         {
-            Charger.StartCharge();
+            _charger.StartCharge();
         }
 
         public void StopCharge()
         {
-            Charger.StopCharge();
+            _charger.StopCharge();
         }
 
         public bool Connected()
         {
-            return Charger.Connected;
+            return _charger.Connected;
         }
-
-        #region Charger
-        public IUsbCharger Charger
-        {
-            get { return _charger; }
-            set
-            {
-                _charger = value;
-                _charger.CurrentValueEvent += HandleCurrentChangedEvent;
-            }
-        }
-        #endregion
-
-        #region Display
-        public IDisplay Display
-        {
-            get { return _display; }
-            set { 
-                _display = value;
-            }
-        }
-        #endregion
 
         void HandleCurrentChangedEvent(object sender, CurrentEventArgs e)
         {
@@ -79,17 +59,17 @@ namespace LadeSkab
             }
             else if (0 < e.Current && e.Current <= 5)
             {
-                Display.Print("Phone at 100% charge.");
+                _display.Print("Phone at 100% charge.");
                 _state = ChargeControlState.FullCharge;
             }
             else if (5 < e.Current && e.Current <= 500)
             {
-                Display.Print("Phone is charging...");
+                _display.Print("Phone is charging...");
                 _state = ChargeControlState.Charging;
             }
             else if (500 < e.Current)
             {
-                Display.Print("Critical error while charging phone!");
+                _display.Print("Critical error while charging phone!");
                 _state = ChargeControlState.Overload;
                 StopCharge();
             }

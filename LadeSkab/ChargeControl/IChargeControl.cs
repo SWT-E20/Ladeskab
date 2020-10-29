@@ -8,7 +8,7 @@ namespace LadeSkab
 {
     public interface IChargeControl
     {
-        IUsbCharger Charger { get; set; }
+        //IUsbCharger Charger { get; set; }
 
         void StartCharge();
         void StopCharge();

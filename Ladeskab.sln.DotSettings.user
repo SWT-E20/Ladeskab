@@ -21,6 +21,7 @@
     &lt;TestId&gt;NUnit3x::3B0E6BB0-9E68-4A75-9FCE-15413232F3B0::.NETCoreApp,Version=v3.1::Ladeskab.Test.Unit.TestStationControl.HandleDoorStatusEvent_DoorClosedAndChargerConnected_PrintCorrectMessage&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::3B0E6BB0-9E68-4A75-9FCE-15413232F3B0::.NETCoreApp,Version=v3.1::Ladeskab.Test.Unit.TestStationControl&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::3B0E6BB0-9E68-4A75-9FCE-15413232F3B0::.NETCoreApp,Version=v3.1::Ladeskab.Test.Unit.TestChargeControl.HandleCurrentChangedEvent_SetPrevStateAndState_PrevStateAndStateIsEqual&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::3B0E6BB0-9E68-4A75-9FCE-15413232F3B0::.NETCoreApp,Version=v3.1::Ladeskab.Test.Unit.TestChargeControl&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>
