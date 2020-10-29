@@ -36,12 +36,12 @@ namespace Ladeskab.Test.Unit
             Assert.That(_uut.DoorState, Is.EqualTo(state));
         }
 
-        [TestCase]
-        public void ReadRFID_With_Arguments_test(int tag)
-        {
-            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs { Id = tag });
-            Assert.That(_uut., Is.EqualTo(tag));
-        }
+        //[TestCase]
+        //public void ReadRFID_With_Arguments_test(int tag)
+        //{
+        //    _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs { Id = tag });
+        //    Assert.That(_uut., Is.EqualTo(tag));
+        //}
 
     }
 }
