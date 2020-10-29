@@ -27,6 +27,20 @@ namespace Ladeskab.Test.Unit
             Assert.That(_open, Is.False);
         }
 
+        [Test]
+        public void OnDoorStatusChanged_GetStatus_IsOpenIsAsExpected()
+        {
+            bool _currentDoorStatus = false;
+            _uut.DoorStatusChanged += (o, args) =>
+            {
+                _currentDoorStatus = args.IsOpen;
+            };
+
+            _uut.OnToggleDoor();
+
+            Assert.That(_currentDoorStatus, Is.EqualTo(true));
+        }
+
         [TestCase(false, false, true, true)] // success: unlocked and closed
         [TestCase(false, true, false, false)] // fail: unlocked and open
         [TestCase(true, false, true, false)] // fail: locked and closed
