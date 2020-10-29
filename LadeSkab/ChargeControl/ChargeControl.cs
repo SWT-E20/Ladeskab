@@ -18,7 +18,7 @@ namespace LadeSkab
         };
 
         public ChargeControlState _state;
-        private ChargeControlState _prevState;
+        public ChargeControlState _prevState;
 
         private IDisplay _display;
         private IUsbCharger _charger;
