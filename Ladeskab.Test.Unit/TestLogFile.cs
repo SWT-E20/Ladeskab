@@ -12,14 +12,36 @@ namespace Ladeskab.Test.Unit
     [TestFixture]
     public class TestLogFile
     {
-       // private LogFile _uut;
-       //// private LogFile _logFile;
-       // [SetUp]
-       // public void Setup()
-       // {
-       //    // _logFile = Substitute.For<LogFile>();
-       //     _uut = new LogFile(ToString());
-       // }
+        private LogFile _uut;
+        StringWriter stringResult;
+
+        [SetUp]
+        public void Setup()
+        {
+            stringResult = new StringWriter();
+            Console.SetOut(stringResult);
+            _uut = new LogFile("TestFile.txt");
+        }
+
+
+        [Test]
+        public void ctor_Log_Created()
+        {
+            
+            Assert.That(File.Exists(_uut.Path), Is.True);
+        }
+
+
+        [Test]
+        public void TestLogContent()
+        {
+            if (!File.Exists(_uut.Path))
+            {
+                string text = File.ReadAllText(_uut.Path);
+                Console.WriteLine("Content: {0}", text);
+            }
+           
+        }
 
         //[Test]
         //public void Log_Test_Val()
@@ -30,7 +52,6 @@ namespace Ladeskab.Test.Unit
         //    string output = sw.ToString();
 
         //    Assert.That(output, Is.EqualTo("right\r\n"));
-        //    // Assert.AreSame();
 
         //}
     }

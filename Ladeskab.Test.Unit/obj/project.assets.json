@@ -4836,19 +4836,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mvraa\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
       "projectName": "Ladeskab.Test.Unit",
-      "projectPath": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
-      "packagesPath": "C:\\Users\\mvraa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab.Test.Unit\\obj\\",
+      "projectPath": "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab.Test.Unit\\Ladeskab.Test.Unit.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab.Test.Unit\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mvraa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4861,8 +4861,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab\\Ladeskab.csproj": {
-              "projectPath": "C:\\Users\\mvraa\\Documents\\GitHub\\SWT\\Ladeskab\\Ladeskab\\Ladeskab.csproj"
+            "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab\\Ladeskab.csproj": {
+              "projectPath": "C:\\Users\\user\\Source\\Repos\\Ladeskab\\Ladeskab\\Ladeskab.csproj"
             }
           }
         }
