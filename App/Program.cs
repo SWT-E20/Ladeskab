@@ -14,12 +14,12 @@ namespace App
             IDoor door = new Door();
             IRfidReader rfid = new RfidReader();
             IDisplay display = new Display();
-            UsbCharger charger = new UsbCharger();
-            IChargeControl chargeControl = new ChargeControl { Charger = charger, Display = display };
+            ILogFile logfile = new LogFile("logfile.txt");
 
-            StationControl ladeSkab = new StationControl();
-            ladeSkab.Door = door;
-            ladeSkab.Rfid = rfid;
+            UsbCharger charger = new UsbCharger();
+            IChargeControl chargeControl = new ChargeControl {Charger = charger, Display = display};
+
+            StationControl ladeSkab = new StationControl(door,rfid,display,chargeControl, logfile);
             ladeSkab.ChargeControl = chargeControl;
 
             Console.WriteLine("e - Close program.");

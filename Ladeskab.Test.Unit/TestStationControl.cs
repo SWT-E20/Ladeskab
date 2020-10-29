@@ -17,6 +17,7 @@ namespace Ladeskab.Test.Unit
         private IRfidReader _rfidReader;
         private IDisplay _display;
         private IChargeControl _charger;
+        private ILogFile _logfile;
 
         [SetUp]
         public void Setup()
@@ -25,8 +26,9 @@ namespace Ladeskab.Test.Unit
             _rfidReader = Substitute.For<IRfidReader>();
             _display = Substitute.For<IDisplay>();
             _charger = Substitute.For<IChargeControl>();
+            _logfile = Substitute.For<ILogFile>();
 
-            _uut = new StationControl(_door, _rfidReader, _display, _charger);
+            _uut = new StationControl(_door, _rfidReader, _display, _charger, _logfile);
         }
         //[TestCase(true)]
         [TestCase(false)]
@@ -48,14 +50,14 @@ namespace Ladeskab.Test.Unit
         {
             _charger.Connected().Returns(true);
             _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 1 });
-            _door.Received(0).LockDoor();
+            _door.Received(1).LockDoor();
         }
         [Test]
         public void ReadRFID_Startcharg()
         {
             _charger.Connected().Returns(true);
             _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 25 });
-            _charger.Received(0).StartCharge();
+            _charger.Received(1).StartCharge();
         }
 
         [Test]
