@@ -20,6 +20,13 @@ namespace Ladeskab.Test.Unit
             Assert.That(_uut.IsLocked, Is.False);
         }
 
+        [Test]
+        public void IsOpen_UseGet_GetExpectedResult()
+        {
+            var _open = _uut.IsOpen;
+            Assert.That(_open, Is.False);
+        }
+
         [TestCase(false, false, true, true)] // success: unlocked and closed
         [TestCase(false, true, false, false)] // fail: unlocked and open
         [TestCase(true, false, true, false)] // fail: locked and closed
