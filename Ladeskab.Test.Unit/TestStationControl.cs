@@ -9,7 +9,7 @@ using NUnit.Framework;
 namespace Ladeskab.Test.Unit
 {
     [TestFixture]
-    public class StationControl_UnitTest
+    public class TestStationControl
     {
         private StationControl _uut;
 
