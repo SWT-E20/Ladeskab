@@ -6,6 +6,7 @@ using LadeSkab;
 using NSubstitute;
 using System.IO;
 using Microsoft.VisualBasic;
+using Newtonsoft.Json.Linq;
 
 namespace Ladeskab.Test.Unit
 {
@@ -27,32 +28,18 @@ namespace Ladeskab.Test.Unit
         [Test]
         public void ctor_Log_Created()
         {
-            
             Assert.That(File.Exists(_uut.Path), Is.True);
         }
 
-
-        [Test]
         public void TestLogContent()
         {
-            if (!File.Exists(_uut.Path))
-            {
-                string text = File.ReadAllText(_uut.Path);
-                Console.WriteLine("Content: {0}", text);
-            }
-           
+            _uut.Log("test");
+            
+            string[] lines = File.ReadAllLines(_uut.Path);
+            foreach(string line in lines)
+                Assert.That(line, Is.EqualTo("test"));
+
+            File.Delete(_uut.Path);
         }
-
-        //[Test]
-        //public void Log_Test_Val()
-        //{
-        //    var sw = new StringWriter();
-        //    Console.SetOut(sw);
-        //    _uut.Log("right");
-        //    string output = sw.ToString();
-
-        //    Assert.That(output, Is.EqualTo("right\r\n"));
-
-        //}
     }
 }
