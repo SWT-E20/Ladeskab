@@ -31,31 +31,22 @@ namespace LadeSkab
 
         private int _oldId { get; set; }
 
-        private string logFile = "logfile.txt"; // Navnet på systemets log-fil
-
         // constructor
-        public StationControl()
+        public StationControl(IDoor door, IRfidReader rfidReader, IDisplay display, IChargeControl charger, ILogFile logfile)
         {
-            ChargeControl = new ChargeControl();
-            Display = new Display();
-            Door = new Door();
-            Logfile = new LogFile(logFile);
-            Rfid = new RfidReader();
+            _door = door;
+            _display = display;
+            _charger = charger;
+            _rfid = rfidReader;
+            _logfile = logfile;
+
+            _door.DoorStatusChanged += HandleDoorStatusEvent;
+            _rfid.KeySwiped += HandleRfidDetectedEvent;
 
             _state = LadeskabState.Available;
         }
 
         #region Door
-
-        public IDoor Door
-        {
-            private get { return _door; }
-            set
-            {
-                _door = value;
-                _door.DoorStatusChanged += HandleDoorStatusEvent;
-            }
-        }
 
         private void HandleDoorStatusEvent(object sender, DoorStateChangedEventArgs e)
         {
@@ -81,14 +72,7 @@ namespace LadeSkab
         #endregion
 
         #region RFID
-        public IRfidReader Rfid
-        {
-            set
-            {
-                _rfid = value;
-                _rfid.KeySwiped += HandleRfidDetectedEvent;
-            }
-        }
+
         private void HandleRfidDetectedEvent(object sender, KeySwipedEventArgs e)
         {
             ReadRFIDTag = e.Id;
