@@ -30,16 +30,16 @@ namespace Ladeskab.Test.Unit
 
             _uut = new StationControl(_door, _rfidReader, _display, _charger, _logfile);
         }
-        //[TestCase(true)]
+        [TestCase(true)]
         [TestCase(false)]
         public void DoorStateChanged_Test(bool state)
         {
             _door.DoorStatusChanged += Raise.EventWith(new DoorStateChangedEventArgs() {IsOpen = state });
             Assert.That(_uut.DoorState, Is.EqualTo(state));
         }
-
-        [TestCase(1)]
         [TestCase(0)]
+        [TestCase(1)]
+        [TestCase(-2)]
         public void ReadRFID_With_Arguments_test(int tag)
         {
             _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs {  Id= tag });
