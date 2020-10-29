@@ -19,8 +19,7 @@ namespace App
             UsbCharger charger = new UsbCharger();
             IChargeControl chargeControl = new ChargeControl {Charger = charger, Display = display};
 
-            StationControl ladeSkab = new StationControl(door,rfid,display,chargeControl, logfile);
-            ladeSkab.ChargeControl = chargeControl;
+            StationControl ladeSkab = new StationControl(door, rfid, display, chargeControl, logfile);
 
             Console.WriteLine("e - Close program.");
             Console.WriteLine("o - Open/close door.");

@@ -121,34 +121,6 @@ namespace LadeSkab
             }
         }
 
-        #endregion
-
-        #region Charger
-        public IChargeControl ChargeControl
-        {
-            private get { return _charger; }
-            set
-            {
-                _charger = value;
-            }
-        }
-        #endregion
-
-        #region Display
-        public IDisplay Display
-        {
-            private get { return _display; }
-            set { _display = value; }
-        }
-        #endregion
-
-        #region LogFile
-        public ILogFile Logfile
-        {
-            private get { return _logfile; }
-            set { _logfile = value; }
-        }
-        #endregion
-        
+        #endregion  
     }
 }

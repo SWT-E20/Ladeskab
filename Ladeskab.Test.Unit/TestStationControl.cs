@@ -30,16 +30,16 @@ namespace Ladeskab.Test.Unit
 
             _uut = new StationControl(_door, _rfidReader, _display, _charger, _logfile);
         }
-        //[TestCase(true)]
+        [TestCase(true)]
         [TestCase(false)]
         public void DoorStateChanged_Test(bool state)
         {
             _door.DoorStatusChanged += Raise.EventWith(new DoorStateChangedEventArgs() {IsOpen = state });
             Assert.That(_uut.DoorState, Is.EqualTo(state));
         }
-
-       // [TestCase(1)]
         [TestCase(0)]
+        [TestCase(1)]
+        [TestCase(-2)]
         public void ReadRFID_With_Arguments_test(int tag)
         {
             _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs {  Id= tag });
@@ -49,7 +49,7 @@ namespace Ladeskab.Test.Unit
         public void ReadRFID_LockDoorStatus()
         {
             _charger.Connected().Returns(true);
-            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 1 });
+            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 25 });
             _door.Received(1).LockDoor();
         }
         [Test]
@@ -67,7 +67,21 @@ namespace Ladeskab.Test.Unit
             _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 25 });
             _display.Received(0).Print("  the door now is closed");
         }
-
-
+        [Test]
+        public void ReadRFID_Stopcharging()
+        {
+            _charger.Connected().Returns(true);
+            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 25 });
+            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 25 });
+            _charger.Received(1).StopCharge();
+        }
+        [Test]
+        public void ReadRFID_unlockdoor()
+        {
+            _charger.Connected().Returns(true);
+            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 25 });
+            _rfidReader.KeySwiped += Raise.EventWith(new KeySwipedEventArgs() { Id = 25 });
+            _door.Received().UnlockDoor();
+        }
     }
 }
