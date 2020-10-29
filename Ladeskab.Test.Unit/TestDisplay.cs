@@ -29,7 +29,7 @@ namespace Ladeskab.Test.Unit
 
             string output = sw.ToString();
 
-            Assert.That(output, Is.EqualTo("Display: Hello world\r\n"));
+            Assert.That(output, Is.EqualTo("DISPLAY: Hello world\r\n"));
         }
     }
 }
