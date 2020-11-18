@@ -33,6 +33,8 @@ namespace LadeSkab
             _timer.Elapsed += TimerOnElapsed;
         }
 
+        
+
         private void TimerOnElapsed(object sender, ElapsedEventArgs e)
         {
             // Only execute if charging

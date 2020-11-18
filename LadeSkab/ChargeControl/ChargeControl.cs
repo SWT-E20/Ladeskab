@@ -49,6 +49,15 @@ namespace LadeSkab
             return _charger.Connected;
         }
 
+        //Event handler til genaflevering
+        public event EventHandler<CurrentEventArgs> CurrentChangedEvent;
+        protected virtual void OnCurrentChangedEvent(CurrentEventArgs e)
+        {
+            CurrentChangedEvent?.Invoke(this, e);
+        }
+
+
+
         void HandleCurrentChangedEvent(object sender, CurrentEventArgs e)
         {
             if (_prevState == _state) return;
@@ -69,6 +78,7 @@ namespace LadeSkab
             }
             else if (500 < e.Current)
             {
+                
                 _display.Print("Critical error while charging phone!");
                 _state = ChargeControlState.Overload;
                 StopCharge();
@@ -76,5 +86,6 @@ namespace LadeSkab
 
             _prevState = _state;
         }
+
     }
 }

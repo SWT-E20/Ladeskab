@@ -31,15 +31,18 @@ namespace Ladeskab.Test.Unit
             Assert.That(File.Exists(_uut.Path), Is.True);
         }
 
-        public void TestLogContent()
-        {
-            _uut.Log("test");
-            
-            string[] lines = File.ReadAllLines(_uut.Path);
-            foreach(string line in lines)
-                Assert.That(line, Is.EqualTo("test"));
 
-            File.Delete(_uut.Path);
-        }
+        //Rettelse til genaflevering
+        //[Test]
+        //public void TestLogContent()
+        //{
+        //    _uut.Log("test");
+
+        //    string[] lines = File.ReadAllLines(_uut.Path);
+        //    foreach (string line in lines)
+        //        Assert.That(line, Is.EqualTo("test"));
+
+        //    File.Delete(_uut.Path);
+        //}
     }
 }
