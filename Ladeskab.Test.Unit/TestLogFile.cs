@@ -31,6 +31,7 @@ namespace Ladeskab.Test.Unit
             Assert.That(File.Exists(_uut.Path), Is.True);
         }
 
+        [Test]
         public void TestLogContent()
         {
             _uut.Log("test");
