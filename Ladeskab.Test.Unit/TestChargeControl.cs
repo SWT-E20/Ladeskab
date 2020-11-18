@@ -1,4 +1,5 @@
-﻿using LadeSkab;
+﻿using System;
+using LadeSkab;
 using NSubstitute;
 using NUnit.Framework;
 
@@ -17,7 +18,12 @@ namespace Ladeskab.Test.Unit
             _display = Substitute.For<IDisplay>();
             _charger = Substitute.For<IUsbCharger>();
 
-            _uut = new ChargeControl (_display, _charger);
+            _uut = new ChargeControl(_display, _charger);
+
+            //Fake eventhandler
+            //_uut.CurrentChangedEvent +=
+            //    (
+            //    );
         }
 
         [Test]
@@ -42,12 +48,13 @@ namespace Ladeskab.Test.Unit
         [TestCase(2)]
         [TestCase(3)]
         [TestCase(4)]
-        public void StartCharge_AllFunctionCallsReceived(int reqNumOfCalls) {
+        public void StartCharge_AllFunctionCallsReceived(int reqNumOfCalls)
+        {
             for (int i = 0; i < reqNumOfCalls; i++)
             {
                 _uut.StartCharge();
             }
-            
+
             _charger.Received(reqNumOfCalls).StartCharge();
         }
 
@@ -82,11 +89,54 @@ namespace Ladeskab.Test.Unit
         {
             // raise event using test charge as argument:
             _charger.CurrentValueEvent += Raise.EventWith(
-                new CurrentEventArgs() { 
+                new CurrentEventArgs()
+                {
                     Current = charge
                 });
 
             Assert.That(_uut._state, Is.EqualTo(resultState));
         }
+
+
+        //Rettelse til genaflevering
+
+
+
+        [TestCase(1, "Phone at 100% charge.")]
+        [TestCase(5, "Phone at 100% charge.")]
+        [TestCase(6, "Phone is charging...")]
+        [TestCase(500, "Phone is charging...")]
+        [TestCase(501, "Critical error while charging phone!")]
+        public void HandleCurrentChangedEvent_ChargerCurrentChanged_PrintCorrectMessage(int _current, string _message)
+        {
+            _charger.CurrentValueEvent += Raise.EventWith(
+                new CurrentEventArgs()
+                {
+                    Current = _current
+                });
+
+            _display.Received(1).Print(_message);
+        }
+        [Test]
+        public void BehaviourTest_OverloadEventTriggerd()
+        {
+            _charger.CurrentValueEvent += Raise.EventWith(new CurrentEventArgs() { Current = 510 });
+            _charger.Received(1).StopCharge();
+        }
+
+        [Test]
+        public void BehaviourTest_StopChargeCalled()
+        {
+            _uut.StopCharge();
+            _charger.Received(1).StopCharge();
+        }
+
+        [Test]
+        public void BehaviourTest_StartChargeCalled()
+        {
+            _uut.StartCharge();
+            _charger.Received(1).StartCharge();
+        }
+
     }
 }
