@@ -39,8 +39,6 @@ namespace Ladeskab.Test.Unit
             string[] lines = File.ReadAllLines(_uut.Path);
             foreach(string line in lines)
                 Assert.That(line, Is.EqualTo("test"));
-
-            File.Delete(_uut.Path);
         }
     }
 }
